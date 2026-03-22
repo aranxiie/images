@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Gallery</title>
+
+<style>
+body {
+  background: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.gallery-section {
+  margin-bottom: 80px;
+}
+
+/* MAIN DISPLAY */
+.gallery-main {
+  width: 100%;
+  height: 500px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-main img,
+.gallery-main video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* THUMBNAILS */
+.gallery-thumbnails-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.gallery-thumb-item {
+  min-width: 180px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.gallery-thumb-item:hover {
+  transform: scale(1.1);
+}
+
+.thumb-active {
+  border-color: red;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎥 PRESENTATION -->
+<div class="gallery-section">
+  <h2>Presentation Activity</h2>
+
+  <div class="gallery-main" id="main-pres">
+    <video src="portfolio/AQM_qR9mcAWRPIHgo4mIM8l-eXzhCoarOL_zstyerZ3Z93TArtT-YwGCduZ_X5hFPGe_-gyB2hpLPEfL_mTNpHuOwI3tu5daTI3xQ8_xhg.mp4" controls></video>
+  </div>
+
+  <div class="gallery-thumbnails-row">
+    <div class="gallery-thumb-item thumb-active" style="background-image:url('portfolio/649522874_4376167539376910_8482921962761084191_n.jpg')" onclick="swapImg('main-pres', this)"></div>
+  </div>
+</div>
+
+<!-- 📸 TOWPEP -->
+<div class="gallery-section">
+  <h2>TOWPEP Assembly</h2>
+
+  <div class="gallery-main" id="main-tow">
+    <img src="portfolio/image-3.png">
+  </div>
+
+  <div class="gallery-thumbnails-row">
+    <div class="gallery-thumb-item thumb-active" style="background-image:url('portfolio/image-3.png')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_133735.jpg')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_162113.jpg')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_164044.webp')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_160548.webp')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_173305.webp')" onclick="swapImg('main-tow', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/20250807_174240.jpg')" onclick="swapImg('main-tow', this)"></div>
+  </div>
+</div>
+
+<!-- 🏆 ACHIEVEMENTS -->
+<div class="gallery-section">
+  <h2>Dean Lister</h2>
+
+  <div class="gallery-main" id="main-ach">
+    <img src="portfolio/MYXJ_20260302193912272_save (1).jpg">
+  </div>
+
+  <div class="gallery-thumbnails-row">
+    <div class="gallery-thumb-item thumb-active" style="background-image:url('portfolio/MYXJ_20260302193912272_save (1).jpg')" onclick="swapImg('main-ach', this)"></div>
+  </div>
+</div>
+
+<!-- 🎉 MUFTI DAY -->
+<div class="gallery-section">
+  <h2>Mufti Day</h2>
+
+  <div class="gallery-main" id="main-mufti">
+    <img src="portfolio/FB_IMG_1763550293433.jpg">
+  </div>
+
+  <div class="gallery-thumbnails-row">
+    <div class="gallery-thumb-item thumb-active" style="background-image:url('portfolio/FB_IMG_1763550293433.jpg')" onclick="swapImg('main-mufti', this)"></div>
+
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/1.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/2.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/3.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/4.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/5.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/6.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/7.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/8.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/9.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/10.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/11.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/12.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/13.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/14.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/15.webp')" onclick="swapImg('main-mufti', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/16.webp')" onclick="swapImg('main-mufti', this)"></div>
+  </div>
+</div>
+
+<!-- 🏫 PMO -->
+<div class="gallery-section">
+  <h2>PMO Assembly</h2>
+
+  <div class="gallery-main" id="main-pmo">
+    <img src="portfolio/01.webp">
+  </div>
+
+  <div class="gallery-thumbnails-row">
+    <div class="gallery-thumb-item thumb-active" style="background-image:url('portfolio/01.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/02.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/03.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/04.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/05.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/06.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/07.webp')" onclick="swapImg('main-pmo', this)"></div>
+    <div class="gallery-thumb-item" style="background-image:url('portfolio/08.webp')" onclick="swapImg('main-pmo', this)"></div>
+  </div>
+</div>
+
+<script>
+function swapImg(mainId, el) {
+  const main = document.getElementById(mainId);
+  const bg = el.style.backgroundImage;
+  const url = bg.slice(5, -2);
+
+  if (url.endsWith(".mp4")) {
+    main.innerHTML = `<video src="${url}" controls autoplay></video>`;
+  } else {
+    main.innerHTML = `<img src="${url}">`;
+  }
+
+  const thumbs = el.parentElement.querySelectorAll(".gallery-thumb-item");
+  thumbs.forEach(t => t.classList.remove("thumb-active"));
+  el.classList.add("thumb-active");
+}
+</script>
+
+</body>
+</html>
